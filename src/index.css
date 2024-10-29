@@ -4,6 +4,13 @@
 
 @import url("https://use.typekit.net/gfb7rkg.css");
 
+@font-face {
+  font-family: "Moon";
+  src: local("Moon"),
+  url("./fonts/F37Moon-ExtraBold.otf") format("opentype");
+  font-weight: bold;
+}
+
 /*Reset Styles*/
 
 * {
@@ -13,6 +20,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 body {
@@ -34,6 +42,27 @@ body {
   padding: 0 40px;
 }
 
+.heroContainer {
+  width: 600px;
+}
+
 h1 {
   font-size: 60px;
+}
+
+h2 {
+  font-family: "Moon", sans-serif;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+h3 {
+  font-family: "Moon", sans-serif;
+  font-size: 50px;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 30px;
 }

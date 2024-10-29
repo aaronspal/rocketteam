@@ -1,3 +1,24 @@
 footer {
     background-color: black;
 }
+
+.footerContainer {
+    width: 1200px;
+    margin: auto;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.RocketTeamLogoWhite {
+    height: 40px;
+}

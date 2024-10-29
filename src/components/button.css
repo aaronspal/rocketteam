@@ -10,3 +10,7 @@ button {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+button a {
+    margin: 0;
+}

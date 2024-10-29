@@ -1,6 +1,18 @@
 nav {
-    background-color: red;
+    /*background-color: red;*/
     width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav.scrolled {
+    background-color: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(30px);
+}
+
+.navContainer {
+    width: 1200px;
+    margin: 0 auto;
     height: 100px;
     display: flex;
     color: white;
@@ -9,10 +21,7 @@ nav {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
     align-items: center;
-    position: fixed;
-    z-index: 100;
 }
 
 .links {

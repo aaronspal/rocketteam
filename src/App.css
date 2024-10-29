@@ -5,5 +5,16 @@
 }
 
 .projects {
+    background-image: url("./images/PayloadBacksplash.jpg");
+}
+
+.outreach {
+    background-image: url("./images/OutreachBacksplash.jpg");
+}
+
+.weare {
+    height: 80vh;
     background-image: url("./images/backsplash.jpg");
+    background-size: cover;
+    backdrop-filter: blur(100px);
 }
