@@ -1,6 +1,6 @@
 import '../App.css';
-import './footer.css';
 import RTLogo from '../images/RocketTeamLogoWhite.png'
+import './footer.css'
 
 function Footer() {
     return (

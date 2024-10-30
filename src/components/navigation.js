@@ -1,64 +1,59 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Assuming you're using react-router for links
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import './navigation.css';
 import RTLogo from '../images/RocketTeamLogoWhite.png';
 
+const subcategories = {
+    "Projects": [
+        { header: "IREC 2024", links: ["Vehicle Systems", "Recovery", "Payload"] },
+        { header: "Technical Projects", links: ["Avionics", "Ground Control Systems", "Thrust Vector Control", "Simulations"] }
+    ],
+    "Outreach": [
+        { header: "Outreach", links: ["IREC Outreach", "Cinematics"] },
+        { header: "Sponsors", links: ["Current Sponsors", "Become a Sponsor"] }
+    ],
+    "Leadership": [
+        { header: "Our Leadership", links: ["Current Leadership", "Alumni"] },
+    ],
+    "New Members": [
+        { header: "New Members", links: ["How To Join", "Getting Started"] },
+        { header: "Upcoming Events", links: ["Events Calendar"] }
+    ]
+};
+
 function Navigation() {
-    const [scrolled, setScrolled] = useState(false);
-    const [hoveredItem, setHoveredItem] = useState(null);
-    const [dropdownActive, setDropdownActive] = useState(false);
+    const [activeLink, setActiveLink] = useState(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 1);
-        };
+    const handleMouseEnter = (link) => {
+        setActiveLink(link);
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    // Define dropdown items for each nav link
-    const dropdownContent = {
-        Projects: [
-            { category: "IREC 2025", items: [{ name: "VEHICLE SYSTEMS", link: "/project1" }, { name: "RECOVERY", link: "/project2" }, {name: "PAYLOAD", link: "/project3" }] },
-            { category: "TECHNICAL PROJECTS", items: [{ name: "AVIONICS", link: "/project3" }, { name: "GROUND CONTROL SYSTEMS", link: "/project4" }, { name: "THRUST VECTOR CONTROL", link: "/project4" }, { name: "SIMULATIONS", link: "/project4" }] }
-        ],
-        Sponsors: [
-            { category: "MAIN SPONSORS", items: [{ name: "Sponsor 1", link: "/sponsor1" }, { name: "Sponsor 2", link: "/sponsor2" }] }
-        ],
-        "New Members": [
-            { category: "Resources", items: [{ name: "Resource 1", link: "/resource1" }, { name: "Resource 2", link: "/resource2" }] }
-        ]
-        // Add more as needed
+    const handleMouseLeave = () => {
+        setActiveLink(null);
     };
 
     return (
-        <nav className={`${scrolled || dropdownActive ? 'scrolled' : ''}`}>
+        <nav onMouseLeave={handleMouseLeave} className={activeLink ? "expanded" : ""}>
             <div className="navContainer">
                 <div className="links">
-                    <img src={RTLogo} className="RTLogoNav" alt="Rocket Team Logo"/>
-                    {["Projects", "Sponsors", "Leadership", "New Members"].map((item) => (
-                        <a key={item} onMouseEnter={() => {setHoveredItem(item);setDropdownActive(true);}} onMouseLeave={() => setDropdownActive(false)}>
-                            {item}
-                        </a>
-                    ))}
+                    <Link to="/"><img src={RTLogo} className="RTLogoNav" alt="Rocket Team Logo"/></Link>
+                    <Link to="/projects" onMouseEnter={() => handleMouseEnter("Projects")}>Projects</Link>
+                    <Link to="/sponsors" onMouseEnter={() => handleMouseEnter("Outreach")}>Outreach</Link>
+                    <Link to="/sponsors" onMouseEnter={() => handleMouseEnter("Leadership")}>Leadership</Link>
+                    <Link to="/new-members" onMouseEnter={() => handleMouseEnter("New Members")}>New Members</Link>
                 </div>
                 <button className="actionButton">Donate</button>
             </div>
 
-            {/* Dropdown Menu */}
-            {hoveredItem && dropdownContent[hoveredItem] && (
-                <div className="dropdownContainer" onMouseEnter={() => setDropdownActive(true)} onMouseLeave={() => {
-                        setDropdownActive(false);
-                        setHoveredItem(null);
-                }}>
-                    {dropdownContent[hoveredItem].map((section, idx) => (
-                        <div key={idx} className="dropdownSection">
-                            <strong>{section.category}</strong>
-                            {section.items.map((subItem, idx) => (
-                                <Link key={idx} to={subItem.link} className="dropdownItem">
-                                    {subItem.name}
+            {activeLink && subcategories[activeLink] && (
+                <div className="subcategoryContainer">
+                    {subcategories[activeLink].map((section, idx) => (
+                        <div key={idx} className="subcategorySection">
+                            <h5>{section.header}</h5>
+                            {section.links.map((link, linkIdx) => (
+                                <Link key={linkIdx} to={`/${link.toLowerCase().replace(/\s+/g, '-')}`}>
+                                    {link}
                                 </Link>
                             ))}
                         </div>
