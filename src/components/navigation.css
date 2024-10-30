@@ -1,8 +1,8 @@
 nav {
-    /*background-color: red;*/
     width: 100%;
     position: fixed;
     z-index: 100;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 nav.scrolled {
@@ -19,7 +19,6 @@ nav.scrolled {
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -45,4 +44,39 @@ nav.scrolled {
     border-radius: 100px;
     padding: 0 30px;
     text-transform: inherit;
+}
+
+/* Dropdown Styles */
+.dropdownContainer {
+    position: absolute;
+    top: 100px; /* Position dropdown just below the navbar */
+    width: 100%;
+    background-color: inherit;
+    /*backdrop-filter: blur(30px);*/
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    transition: opacity 0.3s ease;
+}
+
+.dropdownSection {
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownItem {
+    padding: 0.25rem 0;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dropdownItem:hover {
+    text-decoration: underline;
 }
