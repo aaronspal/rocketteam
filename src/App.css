@@ -12,9 +12,18 @@
     background-image: url("./images/OutreachBacksplash.jpg");
 }
 
-.weare {
-    height: 80vh;
-    background-image: url("./images/backsplash.jpg");
+.weare, .upcomingEvents {
+    background-image: url("./images/backsplashblur.png");
     background-size: cover;
-    backdrop-filter: blur(100px);
+}
+
+.weareContainer, .upcomingEventsContainer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.eventsContainer {
+    display: flex;
+    justify-content: space-between;
 }

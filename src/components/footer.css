@@ -7,6 +7,12 @@ footer {
     margin: auto;
 }
 
+.footerLogos {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
 .footerLinks {
     display: flex;
     justify-content: space-between;
@@ -21,4 +27,31 @@ footer a {
 
 .RocketTeamLogoWhite {
     height: 40px;
+}
+
+.BaskinLogo {
+    height: 40px;
+    margin-bottom: -4px;
+}
+
+.UCSCLogo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.UCSCLogos {
+    display: flex;
+    align-items: center;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.preferences {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }

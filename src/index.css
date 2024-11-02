@@ -31,7 +31,7 @@ a {
 body {
   margin: 0;
   color: white;
-  background-color: #1e1e1e;
+  background-color: black;
   font-family: "DIN 2014", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,11 +44,27 @@ body {
   background-size: cover;
   display: flex;
   align-items: center;
-  padding: 0 40px;
+}
+
+.heroOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inherit;
+  align-items: inherit;
 }
 
 .heroContainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.heroTextContainer {
   width: 600px;
+}
+
+.heroTextContainer p {
+  font-size: 18px;
 }
 
 h1 {
@@ -57,13 +73,18 @@ h1 {
 
 h2 {
   font-family: "Moon", sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 80px;
 }
 
 h3 {
   font-family: "Moon", sans-serif;
   font-size: 50px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 h5 {

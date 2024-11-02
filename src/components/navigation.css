@@ -8,7 +8,7 @@ nav {
     position: fixed;
     z-index: 100;
     background: transparent;
-    /*transition: 0.2s;*/
+    /*transition: 0.4s;*/
 }
 
 .links {
@@ -19,7 +19,7 @@ nav {
 
 }
 
-nav.expanded {
+nav.expanded, nav.scrolled  {
     background: rgba(30, 30, 30, 0.7);
     backdrop-filter: blur(40px);
 }

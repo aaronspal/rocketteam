@@ -1,0 +1,21 @@
+.eventsTile {
+    border-radius: 10px;
+    border: 1px solid rgba(30, 30, 40, 0.6);
+    background: rgba(30, 30, 40, 0.30);
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    width: 24%;
+}
+
+.eventsTile p {
+    color: grey;
+    margin: 0;
+}
+
+.eventInfo {
+    margin-top: 10px;
+}
+
+.eventTitle {
+    margin-top: 20px;
+}
