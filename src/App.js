@@ -1,4 +1,3 @@
-import './App.css';
 import './index.css';
 
 // Webpages
@@ -12,6 +11,7 @@ import Payload from "./pages/irec/payload";
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import { Routes, Route } from 'react-router-dom';
+import Avionics from "./pages/technical-projects/avionics";
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
               <Route path="/irec/vehicle-systems" element={<VehicleSystems />} />
               <Route path="/irec/recovery" element={<Recovery />} />
               <Route path="/irec/payload" element={<Payload />} />
+              <Route path="/technical-projects/avionics" element={<Avionics />} />
           </Routes>
           <Footer/>
       </div>

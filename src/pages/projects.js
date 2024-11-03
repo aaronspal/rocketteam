@@ -1,5 +1,3 @@
-import Footer from "../components/footer";
-
 function Projects() {
     return (
         <section>

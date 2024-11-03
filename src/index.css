@@ -54,9 +54,10 @@ body {
   align-items: inherit;
 }
 
-.heroContainer {
+.contentContainer {
   width: 1200px;
   margin: 0 auto;
+  padding: 50px 0;
 }
 
 .heroTextContainer {
@@ -67,6 +68,8 @@ body {
   font-size: 18px;
 }
 
+/*HEADER STYLES*/
+
 h1 {
   font-size: 60px;
 }
@@ -74,7 +77,7 @@ h1 {
 h2 {
   font-family: "Moon", sans-serif;
   font-size: 60px;
-  line-height: 80px;
+  line-height: 60px;
 }
 
 h3 {

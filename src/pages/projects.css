@@ -1,0 +1,16 @@
+body {
+    background-color: #141414;
+}
+
+.splashImage {
+    background-image: url("../images/backsplash.jpg");
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+h4 {
+    color: #b6b6b6;
+}

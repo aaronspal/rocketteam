@@ -1,12 +1,12 @@
 import '../projects.css';
 
-function Payload() {
+function Avionics() {
     return (
         <section>
             <section className="splashImage">
                 <section className="contentContainer">
-                    <h2>PAYLOAD</h2>
-                    <h4>RESEARCH PROJECT</h4>
+                    <h2>Avionics</h2>
+                    <h4>TECHNICAL PROJECT</h4>
                 </section>
             </section>
             <section className="contentContainer">
@@ -19,4 +19,4 @@ function Payload() {
     )
 }
 
-export default Payload;
+export default Avionics;

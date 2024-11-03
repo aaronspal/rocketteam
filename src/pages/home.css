@@ -1,0 +1,23 @@
+/*home.css is for home styles*/
+
+.landing {
+    background-image: url("../images/backsplash.jpg");
+}
+
+.projects {
+    background-image: url("../images/PayloadBacksplash.jpg");
+}
+
+.outreach {
+    background-image: url("../images/OutreachBacksplash.jpg");
+}
+
+.weare, .upcomingEvents {
+    background-image: url("../images/backsplashblur.png");
+    background-size: cover;
+}
+
+.eventsContainer {
+    display: flex;
+    justify-content: space-between;
+}

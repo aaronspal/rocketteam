@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../pages/home.css';
 import './navigation.css';
 import RTLogo from '../images/RocketTeamLogoWhite.png';
+// import Button from "./button";
 
 const subcategories = {
     "Projects": [
-        { header: "IREC 2024", links: [
+        { header: "IREC 2025", links: [
                 { name: "Vehicle Systems", path: "/irec/vehicle-systems" },
                 { name: "Recovery", path: "/irec/recovery" },
                 { name: "Payload", path: "/irec/payload" },
@@ -23,6 +24,10 @@ const subcategories = {
                 { name: "IREC Outreach", path: "/outreach/irec-outreach" },
                 { name: "Cinematics", path: "/outreach/cinematics" },
             ] },
+        { header: "Sponsors", links: [
+                { name: "Our Sponsors", path: "/outreach/irec-outreach" },
+                { name: "Become a Sponsor", path: "/outreach/cinematics" },
+            ] },
     ],
     "Leadership": [
         { header: "Our Leadership", links: [
@@ -34,6 +39,10 @@ const subcategories = {
         { header: "New Members", links: [
                 { name: "How To Join", path: "/new-members/how-to-join" },
                 { name: "Getting Started", path: "/new-members/getting-started" },
+            ] },
+        { header: "External Rescources", links: [
+                { name: "Slack", path: "/new-members/how-to-join" },
+                { name: "Events Calendar", path: "/new-members/getting-started" },
             ] },
     ]
 };
@@ -55,10 +64,7 @@ function Navigation() {
     }, []);
 
     return (
-        <nav
-            onMouseLeave={handleMouseLeave}
-            className={`${activeLink ? "expanded" : ""} ${scrolled ? "scrolled" : ""}`}
-        >
+        <nav onMouseLeave={handleMouseLeave} className={`${activeLink ? "expanded" : ""} ${scrolled ? "scrolled" : ""}`}>
             <div className="navContainer">
                 <div className="links">
                     <Link to="/"><img src={RTLogo} className="RTLogoNav" alt="Rocket Team Logo"/></Link>
@@ -67,7 +73,9 @@ function Navigation() {
                     <Link to="/sponsors" onMouseEnter={() => handleMouseEnter("Leadership")}>Leadership</Link>
                     <Link to="/new-members" onMouseEnter={() => handleMouseEnter("New Members")}>New Members</Link>
                 </div>
-                <button className="actionButton">Donate</button>
+                <a href="https://www.givecampus.com/schools/UniversityofCaliforniaSantaCruz/giving-day-2024/pages/ucscrocketry" target="_blank" rel="noopener noreferrer"><button class="givingDayButton" role="button">DONATE</button></a>
+                {/*<Button label={"DONATE"} link={"https://www.givecampus.com/schools/UniversityofCaliforniaSantaCruz/giving-day-2024/pages/ucscrocketry"}/>*/}
+
             </div>
 
             {activeLink && subcategories[activeLink] && (

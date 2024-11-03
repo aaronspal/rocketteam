@@ -1,4 +1,4 @@
-import '../App.css';
+import '../pages/home.css';
 import RTLogo from '../images/RocketTeamLogoWhite.png'
 import UCSCLogo from '../images/UC_Santa_Cruz_logo.svg'
 import BaskinLogo from '../images/UCSC_BaskinEng_Logo_Color_RGB.svg'
