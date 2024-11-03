@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rocketteam/static/css/main.fbefec6e.css",
-    "main.js": "/rocketteam/static/js/main.46a94c75.js",
+    "main.css": "/rocketteam/static/css/main.e6261b3b.css",
+    "main.js": "/rocketteam/static/js/main.d0cc10dd.js",
     "static/js/453.58f6a3fc.chunk.js": "/rocketteam/static/js/453.58f6a3fc.chunk.js",
     "static/media/backsplash.jpg": "/rocketteam/static/media/backsplash.1a2f93aad327f7d608eb.jpg",
     "static/media/PayloadBacksplash.jpg": "/rocketteam/static/media/PayloadBacksplash.6e64fc74f082df503766.jpg",
@@ -12,12 +12,12 @@
     "static/media/UCSC_BaskinEng_Logo_Color_RGB.svg": "/rocketteam/static/media/UCSC_BaskinEng_Logo_Color_RGB.620a339131d7a3d26491ed379e40d7ba.svg",
     "static/media/UC_Santa_Cruz_logo.svg": "/rocketteam/static/media/UC_Santa_Cruz_logo.c445294ae0a1b6c2ab96b5956336c22d.svg",
     "index.html": "/rocketteam/index.html",
-    "main.fbefec6e.css.map": "/rocketteam/static/css/main.fbefec6e.css.map",
-    "main.46a94c75.js.map": "/rocketteam/static/js/main.46a94c75.js.map",
+    "main.e6261b3b.css.map": "/rocketteam/static/css/main.e6261b3b.css.map",
+    "main.d0cc10dd.js.map": "/rocketteam/static/js/main.d0cc10dd.js.map",
     "453.58f6a3fc.chunk.js.map": "/rocketteam/static/js/453.58f6a3fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbefec6e.css",
-    "static/js/main.46a94c75.js"
+    "static/css/main.e6261b3b.css",
+    "static/js/main.d0cc10dd.js"
   ]
 }
