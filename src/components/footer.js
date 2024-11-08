@@ -1,7 +1,7 @@
 import '../pages/home.css';
-import RTLogo from '../images/RocketTeamLogoWhite.png'
-import UCSCLogo from '../images/UC_Santa_Cruz_logo.svg'
-import BaskinLogo from '../images/UCSC_BaskinEng_Logo_Color_RGB.svg'
+import RTLogo from '../media/RocketTeamLogoWhite.png'
+import UCSCLogo from '../media/UC_Santa_Cruz_logo.svg'
+import BaskinLogo from '../media/UCSC_BaskinEng_Logo_Color_RGB.svg'
 import './footer.css'
 
 function Footer() {
@@ -22,7 +22,6 @@ function Footer() {
                     <div>
                         <h5>IREC 2025</h5>
                         <a>Vehicle Systems</a>
-                        <a>Recovery</a>
                         <a>Payload</a>
                     </div>
                     <div>
@@ -34,8 +33,8 @@ function Footer() {
                     </div>
                     <div>
                     <h5>OUTREACH</h5>
-                        <a>IREC Outreach</a>
-                        <a>Cinematics</a>
+                        <a>Outreach</a>
+                        <a>Media</a>
                         <a>Our Sponsors</a>
                         <a>Become a Sponsor</a>
                     </div>

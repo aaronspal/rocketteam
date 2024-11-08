@@ -3,7 +3,7 @@ body {
 }
 
 .splashImage {
-    background-image: url("../images/backsplash.jpg");
+    background-image: url("../media/backsplash.jpg");
     height: 60vh;
     background-size: cover;
     display: flex;

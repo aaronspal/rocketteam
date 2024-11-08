@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../pages/home.css';
 import './navigation.css';
-import RTLogo from '../images/RocketTeamLogoWhite.png';
+import RTLogo from '../media/RocketTeamLogoWhite.png';
 // import Button from "./button";
 
 const subcategories = {
     "Projects": [
         { header: "IREC 2025", links: [
                 { name: "Vehicle Systems", path: "/irec/vehicle-systems" },
-                { name: "Recovery", path: "/irec/recovery" },
                 { name: "Payload", path: "/irec/payload" },
             ] },
         { header: "Technical Projects", links: [
@@ -21,11 +20,11 @@ const subcategories = {
     ],
     "Outreach": [
         { header: "Outreach", links: [
-                { name: "IREC Outreach", path: "/outreach/irec-outreach" },
-                { name: "Cinematics", path: "/outreach/cinematics" },
+                { name: "Outreach", path: "/outreach/outreach" },
+                { name: "Media", path: "/outreach/cinematics" },
             ] },
         { header: "Sponsors", links: [
-                { name: "Our Sponsors", path: "/outreach/irec-outreach" },
+                { name: "Our Sponsors", path: "/outreach/outreach" },
                 { name: "Become a Sponsor", path: "/outreach/cinematics" },
             ] },
     ],

@@ -6,7 +6,7 @@ function Payload() {
             <section className="splashImage">
                 <section className="contentContainer">
                     <h2>PAYLOAD</h2>
-                    <h4>RESEARCH PROJECT</h4>
+                    <h4>IREC RESEARCH PROJECT</h4>
                 </section>
             </section>
             <section className="contentContainer">
