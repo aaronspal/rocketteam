@@ -19,31 +19,31 @@ function Footer() {
                 </div>
 
                 <div className="footerLinks">
-                    <div>
+                    <div className="footerColumn">
                         <h5>IREC 2025</h5>
                         <a>Vehicle Systems</a>
                         <a>Payload</a>
                     </div>
-                    <div>
+                    <div className="footerColumn">
                         <h5>TECHNICAL PROJECTS</h5>
                         <a>Avionics</a>
                         <a>Ground Control Systems</a>
                         <a>Thrust Vector Control</a>
                         <a>Simulations</a>
                     </div>
-                    <div>
+                    <div className="footerColumn">
                     <h5>OUTREACH</h5>
                         <a>Outreach</a>
                         <a>Media</a>
                         <a>Our Sponsors</a>
                         <a>Become a Sponsor</a>
                     </div>
-                    <div>
+                    <div className="footerColumn">
                         <h5>LEADERSHIP</h5>
                         <a>Current Leads</a>
                         <a>Alumni</a>
                     </div>
-                    <div>
+                    <div className="footerColumn">
                         <h5>NEW MEMBERS</h5>
                         <a>How to Join</a>
                         <a>Events Calendar</a>
@@ -52,7 +52,7 @@ function Footer() {
                 </div>
                 <div className="footerInfo">
                     <div className="copywrite">
-                        <h5>COPYWRIGHT UCSC ROCKETRY 2024. ALL RIGHTS RESERVED</h5>
+                        <h5>COPYRIGHT UCSC ROCKETRY 2024. ALL RIGHTS RESERVED</h5>
                     </div>
                     <div className="preferences">
                     <h5>PRIVACY POLICY</h5>

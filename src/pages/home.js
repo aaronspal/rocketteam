@@ -2,8 +2,11 @@ import './home.css';
 import Button from "../components/button";
 import EventTile from "../components/eventtile";
 import BentoStat from "../components/bentoStat";
-import RocketLaunch from "../media/rocketlaunchfeb.jpg";
+import RocketLaunch from "../media/home/rocketlaunchfeb.jpg";
 import RocketLaunchVideo from "../media/videos/splashvideo.mp4";
+
+import React, { useEffect, useRef, useState } from 'react';
+
 
 function Home() {
     return (
@@ -23,42 +26,71 @@ function Home() {
             </section>
             <section className="weare">
                 <div className="contentContainer">
-                    <div className="weareFlex">
-                        <div className="textContainer">
-                            <h3>WE ARE UCSC'S PREMIER AEROSPACE ORGANIZATION</h3>
-                            <p>
-                            As a team, our mission is to design and build high-powered rockets that
-                                model current challenges in space exploration and Aerospace Engineering.
-                                The UC Santa Cruz Rocketry Team was founded in 2017 by a group of
-                                engineering students motivated to pursue hands-on opportunities
-                                in Aerospace Engineering.
-                            </p>
-                            <p>
-                                As the first rocketry club at UCSC, the team was inspired to
-                                provide its members a unique hands-on engineering experience,
-                                spanning across Computer Science, Robotics Engineering, Physics,
-                                Electrical Engineering, Business, and numerous other fields.
-                                The team also actively participates in STEM outreach throughout
-                                the local community. As a team, our mission is to design
-                                and build high-powered rockets that model current challenges in space
-                                exploration and Aerospace Engineering.
-                            </p>
-                        </div>
-                        <div className="bentoContainer">
-                            <img className="RocketIMG" src={RocketLaunch}/>
-                            <div className="bentoStatContainer">
-                                <BentoStat headline="60+" subtext="Members"/>
-                                <BentoStat headline="10" subtext="Subteams"/>
-                                <BentoStat headline="12+" subtext="Industry partners"/>
-                            </div>
-                        </div>
+                    {/*<div className="flexContainer">*/}
+                    {/*    <div className="textContainer">*/}
+                    {/*        <h3>WE ARE UCSC'S PREMIER AEROSPACE ORGANIZATION</h3>*/}
+                    {/*        <p>*/}
+                    {/*            Nested within the forests of Santa Cruz, California, the UCSC Rocket Team is*/}
+                    {/*            the leading aerospace organization for the University of California,*/}
+                    {/*            Santa Cruz. We design and build high-powered rockets that model current*/}
+                    {/*            challenges in space exploration and aerospace engineering.*/}
+                    {/*        </p>*/}
+                    {/*        <p>*/}
+                    {/*            We are dedicated to providing our students with a unique hands-on*/}
+                    {/*            experience that spans a variety of disciplines such as Computer Science,*/}
+                    {/*            Robotics Engineering, Electrical Engineering, Astrophysics, as well as*/}
+                    {/*            Business Administration and the Arts.*/}
+
+                    {/*            We also*/}
+                    {/*        </p>*/}
+                    {/*        <p>*/}
+                    {/*            This year, the UCSC Rocket team will be competing in the International Rocketry*/}
+                    {/*            Engineering Competition (IREC), formerly known as Spaceport America. Students will*/}
+                    {/*            be constructing a rocket that goes ten thousand feet into the air at speeds exceeding*/}
+                    {/*            Mach 1.*/}
+                    {/*        </p>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="bentoContainer">*/}
+                    {/*        <div className="bentoStatContainer">*/}
+                    {/*            <BentoStat headline="60+" subtext="Members"/>*/}
+                    {/*            <BentoStat headline="10" subtext="Subteams"/>*/}
+                    {/*            <BentoStat headline="20+" subtext="Partners"/>*/}
+                    {/*        </div>*/}
+                    {/*        <img className="RocketIMG" src={RocketLaunch}/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    <div className="bentoStatContainer">
+                        <BentoStat headline="60+" subtext="Members"/>
+                        <BentoStat headline="10" subtext="Subteams"/>
+                        <BentoStat headline="20+" subtext="Partners"/>
                     </div>
+                    <h3>WE ARE UCSC'S PREMIER AEROSPACE ORGANIZATION</h3>
+                        <p>
+                            Nested within the forests of Santa Cruz, California, the UCSC Rocket Team is
+                            the leading aerospace organization for the University of California,
+                            Santa Cruz. We design and build high-powered rockets that model current
+                            challenges in space exploration and aerospace engineering.
+                        </p>
+                        <p>
+                            We are dedicated to providing our students with a unique hands-on
+                            experience that spans a variety of disciplines such as Computer Science,
+                            Robotics Engineering, Electrical Engineering, Astrophysics, as well as
+                            Business Administration and the Arts.
+
+                            We also
+                        </p>
+                        <p>
+                            This year, the UCSC Rocket team will be competing in the International Rocketry
+                            Engineering Competition (IREC), formerly known as Spaceport America. Students will
+                            be constructing a rocket that goes ten thousand feet into the air at speeds exceeding
+                            Mach 1.
+                        </p>
                 </div>
             </section>
             <section className="projects hero">
-                <div className="heroOverlay">
+            <div className="heroOverlay">
                     <div className="contentContainer">
-                        <div className="heroTextContainer">
+                        <div className={"heroTextContainer"}>
                             <h2>PUSHING LIMITS</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -86,7 +118,7 @@ function Home() {
             <section className="outreach hero">
                 <div className="heroOverlay">
                     <div className="contentContainer">
-                        <div className="heroTextContainer">
+                        <div className={"heroTextContainer"}>
                             <h2>EMPOWERING OUR LOCAL COMMUNITY</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

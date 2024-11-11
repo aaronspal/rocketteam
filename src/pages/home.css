@@ -6,43 +6,29 @@
 }
 
 .projects {
-    background-image: url("../media/PayloadBacksplash.jpg");
+    background-image: url("../media/home/PayloadBacksplash.jpg");
 }
 
 .outreach {
-    background-image: url("../media/OutreachBacksplash.jpg");
+    background-image: url("../media/home/OutreachBacksplash.jpg");
 }
 
-.weare, .upcomingEvents {
-    background-image: url("../media/backsplashblur.png");
-    background-size: cover;
-}
+/*.weare, .upcomingEvents {*/
+/*    background-image: url("../media/home/backsplashblur.png");*/
+/*    background-size: cover;*/
+/*}*/
 
 .eventsContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.weareFlex {
-    display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 
 .RocketIMG {
     width: 400px;
+    height: 520px;
     border-radius: 10px;
-}
-
-.bentoContainer {
-    display: flex;
-    gap: 15px;
-}
-
-.bentoStatContainer {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 15px;
 }
 
 .backgroundVideo {
@@ -53,4 +39,18 @@
     height: 100vh;
     object-fit: cover; /* Ensures the video covers the viewport without stretching */
     z-index: -1; /* Places the video behind the text */
+}
+
+@media screen and (max-width: 1250px) {
+    .RocketIMG {
+        max-width: 400px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .RocketIMG {
+        width: 100%;
+        border-radius: 10px;
+    }
 }

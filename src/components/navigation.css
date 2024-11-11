@@ -8,7 +8,11 @@ nav {
     position: fixed;
     z-index: 100;
     background: transparent;
-    /*transition: 0.4s;*/
+    /*transition: 0.2s;*/
+}
+
+.navItems {
+    display: none;
 }
 
 .links {
@@ -32,7 +36,6 @@ nav.expanded, nav.scrolled  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
@@ -45,7 +48,6 @@ nav.expanded, nav.scrolled  {
     padding: 20px;
     padding-bottom: 40px;
     margin: auto;
-    color: #fff;
 }
 
 /* Subcategory Sections */
@@ -140,4 +142,25 @@ nav.expanded, nav.scrolled  {
     left: 0;
     top: 0;
     border-radius: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+    nav {
+        padding: 0 50px;
+    }
+    .navContainer {
+        width: 100%;
+    }
+    .subcategoryContainer {
+        padding: 20px 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navItems {
+        display: block;
+    }
+    .links {
+        display: none;
+    }
 }

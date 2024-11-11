@@ -4,6 +4,18 @@
 
 @import url("https://use.typekit.net/gfb7rkg.css");
 
+:root {
+  --baseColor: #0c0f14;
+  --text: #fff;
+  --subhead: #b6b6b6;
+  --textDark: #656565;
+  --tileBackground: rgba(43, 65, 100, 0.25);
+  --tileBlur: blur(30px);
+  --borderRadius: 10px;
+  --border: 1px solid rgba(30, 30, 40, 0.8);
+
+}
+
 @font-face {
   font-family: "Moon";
   src: local("Moon"),
@@ -16,6 +28,7 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
+  /*transition: 1s;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,8 +43,8 @@ a {
 
 body {
   margin: 0;
-  color: white;
-  background-color: black;
+  color: var(--text);
+  background-color: var(--baseColor);
   font-family: "DIN 2014", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,10 +67,19 @@ body {
   align-items: inherit;
 }
 
-.contentContainer {
+.contentContainer, .headlineContainer {
   width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+.headlineContainer {
+  text-align: center;
+}
+
+.headlineContainer h2 {
+  font-size: 100px;
+  padding-bottom: 20px;
 }
 
 .heroTextContainer {
@@ -66,6 +88,26 @@ body {
 
 .heroTextContainer p {
   font-size: 18px;
+}
+
+/*FLEXBOXES*/
+
+.flexContainer {
+  display: flex;
+  gap: 30px;
+}
+
+
+.bentoContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.bentoStatContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 15px;
 }
 
 /*HEADER STYLES*/
@@ -88,9 +130,57 @@ h3 {
 
 h4 {
   font-size: 18px;
+  color: var(--subhead);
 }
 
 h5 {
   text-transform: uppercase;
-  color: #444;
+  color: var(--textDark);
+}
+
+h6 {
+}
+
+figure {
+  margin: 0;
+  padding: 30px;
+  border: solid 3px var(--textDark);
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--textDark);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1300px) {
+  .contentContainer, .headlineContainer {
+    width: 100%;
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bentoContainer {
+    flex-direction: column-reverse;
+  }
+  .RocketIMG {
+    width: 100%;
+  }
+  .bentoStatContainer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .heroTextContainer {
+    width: 100%;
+  }
 }

@@ -1,8 +1,8 @@
 .bentoStat {
-    border-radius: 10px;
-    border: 1px solid rgba(30, 30, 40, 0.8);
-    background: rgba(30, 30, 40, 0.40);
-    backdrop-filter: blur(15px);
+    border: var(--border);
+    background-color: var(--tileBackground);
+    backdrop-filter: var(--tileBlur);
+    border-radius: var(--borderRadius);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -12,9 +12,19 @@
     min-width: 180px;
     flex-grow: 1;
     text-transform: uppercase;
+    flex-basis: 100%;
 }
 
 .bentoStat h2 {
     color: #68ada2;
     margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .bentoStat {
+        min-width: 100px;
+    }
+    .bentoStat h2 {
+        font-size: 40px;
+    }
 }

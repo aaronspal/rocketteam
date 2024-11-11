@@ -1,17 +1,16 @@
-import '../projects.css';
-import splashImage from "../../media/payload/payload.jpg"
+import './projects.css';
+import splashImage from "./../media/avionics/avionics.png"
+import ProjectFeature from "../components/projectfeature";
+import avionicsImage from "../media/avionics/avionics.png";
 
-function Payload() {
+function Avionics() {
     return (
         <section>
-            <section className="splashImage">
-                <img src={splashImage} className="backgroundImage"/>
-                <div className="overlay"></div>
-                <section className="contentContainer">
-                    <h2>PAYLOAD</h2>
-                    <h4>International Rocketry Engineering Competition</h4>
-                </section>
-            </section>
+            <ProjectFeature
+                photo={avionicsImage}
+                team="Outreach"
+                type="Administrative Team"
+            />
             <section className="contentContainer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
@@ -25,4 +24,4 @@ function Payload() {
     )
 }
 
-export default Payload;
+export default Avionics;

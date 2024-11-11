@@ -1,0 +1,6 @@
+.skill {
+    background-color: var(--tileBackground);
+    backdrop-filter: var(--tileBlur);
+    border-radius: var(--borderRadius);
+    padding: 10px;
+}
