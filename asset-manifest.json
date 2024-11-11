@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/rocketteam/static/css/main.380c28c9.css",
-    "main.js": "/rocketteam/static/js/main.ed035206.js",
+    "main.css": "/rocketteam/static/css/main.8903af3d.css",
+    "main.js": "/rocketteam/static/js/main.5f433f1c.js",
     "static/js/453.58f6a3fc.chunk.js": "/rocketteam/static/js/453.58f6a3fc.chunk.js",
     "static/media/splashvideo.mp4": "/rocketteam/static/media/splashvideo.f90085090f705a74158d.mp4",
     "static/media/rocketlaunchfeb.jpg": "/rocketteam/static/media/rocketlaunchfeb.1b3c99c33c6a362f2e88.jpg",
-    "static/media/backsplash.jpg": "/rocketteam/static/media/backsplash.1a2f93aad327f7d608eb.jpg",
+    "static/media/LeWireframe.png": "/rocketteam/static/media/LeWireframe.7495d4f90d9eeb37d46c.png",
+    "static/media/avionics.png": "/rocketteam/static/media/avionics.2763e6764b30c688d220.png",
     "static/media/PayloadBacksplash.jpg": "/rocketteam/static/media/PayloadBacksplash.6e64fc74f082df503766.jpg",
+    "static/media/payload.jpg": "/rocketteam/static/media/payload.6e64fc74f082df503766.jpg",
     "static/media/OutreachBacksplash.jpg": "/rocketteam/static/media/OutreachBacksplash.88f63bc333538d5672e9.jpg",
+    "static/media/loading.jpg": "/rocketteam/static/media/loading.59d76a8e87aafa937d2f.jpg",
+    "static/media/bluebackground.png": "/rocketteam/static/media/bluebackground.adc7d36dace13adfaebb.png",
     "static/media/F37Moon-ExtraBold.otf": "/rocketteam/static/media/F37Moon-ExtraBold.69c5ec911d43b7ad159d.otf",
-    "static/media/backsplashblur.png": "/rocketteam/static/media/backsplashblur.7effb6f3f68ede1661da.png",
     "static/media/RocketTeamLogoWhite.png": "/rocketteam/static/media/RocketTeamLogoWhite.9de6e80ce551f9048576.png",
     "static/media/UCSC_BaskinEng_Logo_Color_RGB.svg": "/rocketteam/static/media/UCSC_BaskinEng_Logo_Color_RGB.620a339131d7a3d26491ed379e40d7ba.svg",
     "static/media/UC_Santa_Cruz_logo.svg": "/rocketteam/static/media/UC_Santa_Cruz_logo.c445294ae0a1b6c2ab96b5956336c22d.svg",
     "index.html": "/rocketteam/index.html",
-    "main.380c28c9.css.map": "/rocketteam/static/css/main.380c28c9.css.map",
-    "main.ed035206.js.map": "/rocketteam/static/js/main.ed035206.js.map",
+    "static/media/menuicon.svg": "/rocketteam/static/media/menuicon.444d0e11927b4093fcb9984b421bfade.svg",
+    "main.8903af3d.css.map": "/rocketteam/static/css/main.8903af3d.css.map",
+    "main.5f433f1c.js.map": "/rocketteam/static/js/main.5f433f1c.js.map",
     "453.58f6a3fc.chunk.js.map": "/rocketteam/static/js/453.58f6a3fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.380c28c9.css",
-    "static/js/main.ed035206.js"
+    "static/css/main.8903af3d.css",
+    "static/js/main.5f433f1c.js"
   ]
 }
