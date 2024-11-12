@@ -50,7 +50,7 @@ body {
     gap: 40px;
     padding-bottom: 50px;
     padding-top: 50px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -105,10 +105,8 @@ body {
 }
 
 .projects2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    display: flex;
     padding-top: 40px;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: space-evenly;
 }
