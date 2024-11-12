@@ -1,0 +1,57 @@
+footer {
+    background-color: black;
+}
+
+.footerContainer {
+    width: 1200px;
+    margin: auto;
+}
+
+.footerLogos {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.RocketTeamLogoWhite {
+    height: 40px;
+}
+
+.BaskinLogo {
+    height: 40px;
+    margin-bottom: -4px;
+}
+
+.UCSCLogo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.UCSCLogos {
+    display: flex;
+    align-items: center;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.preferences {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
