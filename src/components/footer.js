@@ -55,8 +55,7 @@ function Footer() {
                         <h5>© UCSC ROCKETRY 2024. ALL RIGHTS RESERVED</h5>
                     </div>
                     <div className="preferences">
-                    <h5>PRIVACY POLICY</h5>
-                        <h5>COOKIE PREFERENCES</h5>
+                        <h5>PRIVACY POLICY</h5>
                     </div>
                 </div>
             </section>

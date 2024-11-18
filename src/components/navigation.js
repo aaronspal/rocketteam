@@ -70,7 +70,9 @@ function Navigation() {
     return (
         <nav onMouseLeave={handleMouseLeave} className={`${activeLink ? "expanded" : ""} ${scrolled ? "scrolled" : ""}`}>
             <div className="navContainer">
-                <img src={menuIcon} className="menuIconNav navItems" alt="Rocket Team Logo"/>
+                <div className="menuButton navItems">
+                    <img src={menuIcon} className="menuIconNav" alt="Rocket Team Logo"/>
+                </div>
                 <img src={RTLogo} className="RTLogoNav navItems" alt="Rocket Team Logo"/>
                 <div className="links">
                     <Link to="/"><img src={RTLogo} className="RTLogoNav" alt="Rocket Team Logo"/></Link>

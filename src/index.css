@@ -107,7 +107,7 @@ body {
 
 .flexContainer {
   display: flex;
-  gap: 30px;
+  /*gap: 30px;*/
 }
 
 .bentoContainer {
@@ -194,14 +194,14 @@ hr {
   border-radius: var(--borderRadius);
 }
 
-/*@media screen and (max-width: 1300px) {*/
-/*  .contentContainer, .headlineContainer {*/
-/*    width: 100%;*/
-/*    padding: 50px 50px;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 1300px) {
+  /*.contentContainer, .headlineContainer {*/
+  /*  width: 100%;*/
+  /*  padding: 50px 50px;*/
+  /*}*/
+}
 
-/*@media screen and (max-width: 1000px) {*/
+@media screen and (max-width: 1210px) {
 /*  .bentoContainer {*/
 /*    flex-direction: column-reverse;*/
 /*  }*/
@@ -211,13 +211,17 @@ hr {
 /*  .bentoStatContainer {*/
 /*    flex-direction: row;*/
 /*  }*/
-/*}*/
+  .contentContainer, .headlineContainer {
+    width: 100%;
+    padding: 50px 50px;
+  }
+}
 
-/*@media screen and (max-width: 800px) {*/
-/*  .flexContainer {*/
-/*    flex-direction: column;*/
-/*  }*/
-/*  .heroTextContainer {*/
-/*    width: 100%;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 900px) {
+    .bentoStatContainer {
+      flex-direction: column;
+    }
+    .flexContainer {
+      flex-direction: column;
+    }
+}

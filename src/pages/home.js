@@ -72,7 +72,7 @@ function Home() {
                         <BentoStat targetNumber="20" subtext="Industry Partners" suffix="+"/>
                     </div>
                     <hr/>
-                    <div className="flexContainer">
+                    <div className="flexContainer g30">
                         <div className="textContainer">
                             <h3>WE ARE UCSC'S PREMIER AEROSPACE ORGANIZATION</h3>
                             <p>
@@ -102,7 +102,6 @@ function Home() {
                                     <img src={BaskinLogo} className="BaskinLogo"/>
                                 </div>
                             </div>
-
                         </div>
                         <div className="column">
                             <video className="RocketVideo" autoPlay loop muted playsInline>
@@ -131,7 +130,7 @@ function Home() {
             <section className="upcomingEvents">
                 <div className="headlineContainer">
                     <h3>Upcoming Events</h3>
-                    <div className="eventsContainer">
+                    <div className="eventsContainer g10">
                         <EventTile day="19" month="November" eventName="General Meeting" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
                         <EventTile day="20" month="November" eventName="Giving Day" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
                         <EventTile day="3" month="December" eventName="General Meeting" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>

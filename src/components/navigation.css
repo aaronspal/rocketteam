@@ -145,23 +145,31 @@ nav.expanded, nav.scrolled  {
     border-radius: 100px;
 }
 
-/*@media screen and (max-width: 1300px) {*/
-/*    nav {*/
-/*        padding: 0 50px;*/
-/*    }*/
-/*    .navContainer {*/
-/*        width: 100%;*/
-/*    }*/
-/*    .subcategoryContainer {*/
-/*        padding: 20px 0 40px 0;*/
-/*    }*/
-/*}*/
+.menuButton {
+    margin-right: 60px;
+}
 
-/*@media screen and (max-width: 900px) {*/
-/*    .navItems {*/
-/*        display: block;*/
-/*    }*/
-/*    .links {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+.menuButton:hover {
+    background: #ff00c8;
+}
+
+@media screen and (max-width: 1210px) {
+    nav {
+        padding: 0 50px;
+    }
+    .navContainer {
+        width: 100%;
+    }
+    .subcategoryContainer {
+        padding: 20px 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navItems {
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+}

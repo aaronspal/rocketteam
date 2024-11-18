@@ -52,32 +52,36 @@ footer a {
 }
 
 .preferences {
-    width: 300px;
     display: flex;
     justify-content: space-between;
 }
 
-/*@media screen and (max-width: 1300px) {*/
-/*    footer {*/
-/*        padding: 0 50px;*/
-/*    }*/
-/*    .footerContainer {*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 1210px) {
+    footer {
+        padding: 0 50px;
+    }
+    .footerContainer {
+        width: 100%;
+    }
+}
 
-/*@media screen and (max-width: 1000px) {*/
-/*    .footerLinks {*/
-/*        justify-content: normal;*/
-/*    }*/
-/*    .footerColumn {*/
-/*        flex-basis: 33.333%;*/
-/*        padding-top: 40px;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 1000px) {
+    .footerLinks {
+        justify-content: normal;
+    }
+    .footerColumn {
+        flex-basis: 33.333%;
+        padding-top: 40px;
+    }
+}
 
-/*@media screen and (max-width: 750px) {*/
-/*    .footerColumn {*/
-/*        flex-basis: 50%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 850px) {
+    .footerColumn {
+        flex-basis: 50%;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
