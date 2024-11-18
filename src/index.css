@@ -180,7 +180,19 @@ figcaption {
 hr {
   /*border-color: var(--textDark);*/
   border: 1px solid var(--tileBackground);
-  border-radius: 5px;}
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--highlight);
+}
+
+.IMG100 {
+  width: 100%;
+  border-radius: var(--borderRadius);
+}
 
 /*@media screen and (max-width: 1300px) {*/
 /*  .contentContainer, .headlineContainer {*/

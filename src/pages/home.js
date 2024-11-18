@@ -3,9 +3,12 @@ import Button from "../components/button";
 import EventTile from "../components/eventtile";
 import BentoStat from "../components/bentoStat";
 import SplashVideo from "../media/videos/splashvideo.mp4";
-import RocketLaunchVideoFAR from "../media/videos/FARLaunch.mp4";
+import RocketLaunchVideoFAR from "../media/videos/FARLaunch2.mp4"
+import ESRALogo from "../media/home/ESRALogo.png"
 
 import React, { useEffect, useRef } from 'react';
+import UCSCLogo from "../media/UC_Santa_Cruz_logo.svg";
+import BaskinLogo from "../media/UCSC_BaskinEng_Logo_Color_RGB.svg";
 
 
 function Home() {
@@ -89,14 +92,25 @@ function Home() {
                             <p>
                                 This year, the UCSC Rocket team will be competing in the International Rocketry
                                 Engineering Competition (IREC), formerly known as Spaceport America. Students will
-                                be constructing a rocket that goes ten thousand feet into the air at speeds exceeding
-                                Mach 1.
+                                be constructing a rocket that goes <span className='highlight'> ten thousand feet into the air at speeds exceeding
+                                Mach 1.</span>
                             </p>
+                            <div className="row">
+                                <img src={ESRALogo} className="ESRALogo"/>
+                                <div className="UCSCLogos">
+                                    <img src={UCSCLogo} className="UCSCLogo"/>
+                                    <img src={BaskinLogo} className="BaskinLogo"/>
+                                </div>
+                            </div>
+
                         </div>
-                        <video className="RocketVideo" autoPlay loop muted playsInline>
-                            <source src={RocketLaunchVideoFAR} type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
+                        <div className="column">
+                            <video className="RocketVideo" autoPlay loop muted playsInline>
+                                <source src={RocketLaunchVideoFAR} type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                            <figcaption>Fullscale Test Launch, February 2024</figcaption>
+                        </div>
                     </div>
                 </div>
             </section>

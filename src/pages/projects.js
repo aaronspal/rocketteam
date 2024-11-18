@@ -5,9 +5,10 @@ import vehicleImage from "../media/vehicle-systems/loading.jpg";
 import payloadImage from "../media/payload/payload.jpg";
 import avionicsImage from "../media/avionics/avionics.png";
 import splashImage from "../media/vehicle-systems/loading.jpg";
-import React from "react";
+import React, {useEffect, useRef} from "react";
 
 function Projects() {
+
     return (
         <section>
             <section className="topImage">

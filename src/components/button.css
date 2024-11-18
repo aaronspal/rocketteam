@@ -4,7 +4,7 @@ button {
     font-size: inherit;
     font-family: 'DIN 2014';
     /*border-radius: 100px;*/
-    border-radius: var(--borderRadius);
+    /*border-radius: var(--borderRadius);*/
     padding: 20px 30px;
     text-transform: uppercase;
     cursor: pointer;

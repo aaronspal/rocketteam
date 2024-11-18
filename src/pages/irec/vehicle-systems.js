@@ -51,13 +51,15 @@ function VehicleSystems() {
                         </p>
                     </div>
                 </div>
-                <h3>Skills used</h3>
-                <section className="row g10">
-                    <Skill name="Computer Aid Design"/>
-                    <Skill name="OpenRocket"/>
-                    <Skill name="Control Fluid Dynamics"/>
-                    <Skill name="Composites"/>
-                    <Skill name="3D Printing"/>
+                <section className="skills">
+                    <h3>Skills used</h3>
+                    <section className="row g10">
+                        <Skill name="Computer Aid Design"/>
+                        <Skill name="OpenRocket"/>
+                        <Skill name="Control Fluid Dynamics"/>
+                        <Skill name="Composites"/>
+                        <Skill name="3D Printing"/>
+                    </section>
                 </section>
                 <div className="bentoContainer">
                     <div className="column">

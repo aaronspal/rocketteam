@@ -26,8 +26,8 @@
 }
 
 .RocketVideo {
-    /*width: 400px;*/
-    height: 520px;
+    width: 400px;
+    /*height: 520px;*/
     border-radius: 10px;
 }
 
@@ -39,6 +39,14 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+}
+
+.weare .row {
+    justify-content: space-between;
+}
+
+.ESRALogo {
+    height: 35px;
 }
 
 /* Define the initial state for the heroTextContainer elements */

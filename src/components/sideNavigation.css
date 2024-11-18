@@ -16,3 +16,7 @@
 .sideNavigation h6:hover {
     color: var(--highlight);
 }
+
+.sideNavigation hr {
+    margin: 0;
+}

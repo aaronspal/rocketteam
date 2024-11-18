@@ -1,0 +1,16 @@
+.projectFeature .contentContainer {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.projectFeature .contentContainer.visible {
+    opacity: 1;
+}
+
+.backgroundImage {
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.splashImage:hover .backgroundImage {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
