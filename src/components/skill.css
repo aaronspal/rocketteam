@@ -2,5 +2,6 @@
     background-color: var(--tileBackground);
     backdrop-filter: var(--tileBlur);
     border-radius: var(--borderRadius);
+    border: var(--border);
     padding: 10px;
 }

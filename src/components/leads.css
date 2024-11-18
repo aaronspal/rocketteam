@@ -1,0 +1,41 @@
+.flexContainer {
+    gap: 15px;
+}
+
+.leadTile {
+    border: var(--border);
+    margin-bottom: 14px;
+}
+
+.leadTile h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.bigPhotoFalse {
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0;
+}
+
+.bigPhotoTrue {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.leadIMG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+
+.bigTrue {
+}
+
+.bigFalse {
+    display: flex;
+    flex-basis: 50%;
+}

@@ -9,12 +9,13 @@ import VehicleSystems from "./pages/irec/vehicle-systems";
 import Payload from "./pages/irec/payload";
 import Avionics from "./pages/technical-projects/avionics";
 
-import Leadership from "./pages/technical-projects/avionics";
+import Leadership from "./pages/leadership/current-leadership";
 import Outreach from "./pages/outreach";
 
 // Components
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
+import CurrentLeadership from "./pages/leadership/current-leadership";
 
 
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/technical-projects/avionics" element={<Avionics/>}/>
               <Route path="/technical-projects/avionics" element={<Leadership/>}/>
               <Route path="/outreach" element={<Outreach/>}/>
+              <Route path="/leadership/current-leadership" element={<CurrentLeadership/>}/>
               {/*<Route path="/technical-projects/avionics" element={<Avionics/>}/>*/}
           </Routes>
           <Footer/>

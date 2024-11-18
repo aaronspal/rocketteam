@@ -52,7 +52,7 @@ function Footer() {
                 </div>
                 <div className="footerInfo">
                     <div className="copywrite">
-                        <h5>COPYRIGHT UCSC ROCKETRY 2024. ALL RIGHTS RESERVED</h5>
+                        <h5>© UCSC ROCKETRY 2024. ALL RIGHTS RESERVED</h5>
                     </div>
                     <div className="preferences">
                     <h5>PRIVACY POLICY</h5>

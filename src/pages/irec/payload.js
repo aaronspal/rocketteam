@@ -1,5 +1,8 @@
 import '../projects.css';
 import splashImage from "../../media/payload/payload.jpg"
+import Skill from "../../components/skill";
+import vehicleImage2 from "../../media/vehicle-systems/rocketlaunchfeb.jpg";
+import SideNavigation from "../../components/sideNavigation";
 
 function Payload() {
     return (
@@ -13,13 +16,35 @@ function Payload() {
                 </section>
             </section>
             <section className="contentContainer">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum
+
+                <div className="flexContainer">
+                    <SideNavigation/>
+                    <div className="textContainer">
+                        <h6>Overview</h6>
+                        <p>
+                            Throughout the 2023-2024 NASA SLI competition season, the payload team designed, manufactured, and configured a large (minimum 5-lb) folding quadcopter drone. The goal of this drone was to successfully land 3D-printed astronauts, known as STEMnauts, from a height of 400 feet without using a parachute or streamer.
+                        </p>
+                        <p>
+                            This year, the Payload Subteam will focus its research on a novel fin actuation design for controlling the roll of a rocket, called Aerodynamic Fin Roll Control (AFRC). Our design utilizes a capstan mechanism to ensure precise and accurate torque control. Additionally our design follows a tail-end actuation instead of a wholle aft fin movement to allow for easier integration into the rocket. Before this design is integrated into the main competition vehicle for future competitions, we will simulate the roll of the rocket using the payload.
+                        </p>
+                    </div>
+                </div>
+                <h3>Skills used</h3>
+                <section className="row g10">
+                    <Skill name="Computer Aid Design"/>
+                    <Skill name="OpenRocket"/>
+                    <Skill name="Control Fluid Dynamics"/>
+                    <Skill name="Composites"/>
+                    <Skill name="3D Printing"/>
+                </section>
+                <div className="bentoContainer">
+                    <div className="column">
+                        <img src={splashImage} className="bentoImage"/>
+                    </div>
+                    <div className="column">
+                        <img src={vehicleImage2} className="bentoImage"/>
+                    </div>
+                </div>
             </section>
         </section>
     )

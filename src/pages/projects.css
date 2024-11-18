@@ -8,10 +8,10 @@
 }
 
 .topImage {
-    height: 40vh;
-    padding-bottom: 25px;
-    /*flex-direction: initial;*/
-    /*align-items: center;*/
+    height: 30vh;
+    padding-top: 50px;
+    flex-direction: initial;
+    align-items: center;
 }
 
 .backgroundImage {

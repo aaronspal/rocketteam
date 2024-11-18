@@ -76,7 +76,7 @@ function Navigation() {
                     <Link to="/"><img src={RTLogo} className="RTLogoNav" alt="Rocket Team Logo"/></Link>
                     <Link to="/projects" onMouseEnter={() => handleMouseEnter("Projects")}>Projects</Link>
                     <Link to="/outreach" onMouseEnter={() => handleMouseEnter("Outreach")}>Outreach</Link>
-                    <Link to="/sponsors" onMouseEnter={() => handleMouseEnter("Leadership")}>Leadership</Link>
+                    <Link to="/current-leadership" onMouseEnter={() => handleMouseEnter("Leadership")}>Leadership</Link>
                     <Link to="/new-members" onMouseEnter={() => handleMouseEnter("New Members")}>New Members</Link>
                 </div>
                 <a href="https://www.givecampus.com/schools/UniversityofCaliforniaSantaCruz/giving-day-2024/pages/ucscrocketry"

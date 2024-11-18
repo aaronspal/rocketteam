@@ -1,0 +1,11 @@
+.leadsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /*gap: 30px;*/
+}
+
+.H5Gray {
+    font-size: 30px;
+    margin-bottom: 20px;
+}

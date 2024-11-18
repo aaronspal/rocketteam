@@ -5,6 +5,7 @@ import vehicleImage from "../media/vehicle-systems/loading.jpg";
 import payloadImage from "../media/payload/payload.jpg";
 import avionicsImage from "../media/avionics/avionics.png";
 import splashImage from "../media/vehicle-systems/loading.jpg";
+import React from "react";
 
 function Projects() {
     return (
@@ -12,64 +13,75 @@ function Projects() {
             <section className="topImage">
                 <img src={background} className="backgroundImage"/>
                 {/*<div className="overlay"></div>*/}
-                <section className="headlineContainer">
+                <section className="pageHeadlineContainer">
                     <h2>PROJECTS</h2>
                 </section>
             </section>
             <section className="contentContainer">
-                <h4>Competition Teams</h4>
+                <h3>Competition Teams</h3>
                 <p>
-                    Rocket Team competes annually in the International Rocketry Engineering Competition (IREC).
+                    The UCSC Rocket Team has a rich history competing in rocektry competitions since it's founding in
+                    2017.
+                    The team has previously competed in the NASA USLI competition, where it has placed high and even won
+                    awards for outstanding design and sportsmanship in 2018, 2019, and 2021.
                 </p>
+                <p>
+                    Beginning in 2024, the team has taken the step up to the International Rocketry Engineering
+                    Challenge,
+                    formerly known as Spaceport America.
+                </p>
+                <span className="infoNote">Learn more about the International Rocketry Engineering Competition</span>
+
             </section>
             <ProjectFeature
                 photo={vehicleImage}
                 team="Vehicle Systems"
                 type="IREC Competition Team"
-                info="Testing shit out"
+                info="The heart of our project. The vehicle team designs and constructs the airframe of the rocket."
             />
             <ProjectFeature
                 photo={payloadImage}
                 team="Payload"
                 type="IREC Competition Team"
-                info="Testing shit out"
+                info="The soul of any rocket. The payload team designs what exactly will be going up with the Rocket. From drones to variable roll-control, this team does it all"
             />
             <section className="contentContainer">
-                <h4>Project Teams</h4>
+                <h3>Project Teams</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum
+                    The UCSC Rocket Team has a rich history competing in rocektry competitions since it's founding in
+                    2017.
+                    The team has previously competed in the NASA USLI competition, where it has placed high and even won
+                    awards for outstanding design and sportsmanship in 2018, 2019, and 2021.
+                </p>
+                <p>
+                    Beginning in 2024, the team has taken the step up to the International Rocketry Engineering
+                    Challenge,
+                    formerly known as Spaceport America.
                 </p>
             </section>
             <ProjectFeature
                 photo={avionicsImage}
                 team="Avionics"
                 type="Project Team"
-                info="Testing shit out"
+                info="Percision control in high-powered rockets. Designed to gather and transmit data with dead-reckoning accuracy."
             />
             <ProjectFeature
                 photo={vehicleImage}
                 team="Ground Control Systems"
                 type="Project Team"
-                info="Testing shit out"
+                info="Creating a state-of-the-art application that can recieve and interpret real-time data."
             />
             <ProjectFeature
                 photo={vehicleImage}
                 team="Thrust Vector Control"
                 type="Project Team"
-                info="Testing shit out"
+                info="Designing a rocket that can land exactly like SpaceX."
             />
             <ProjectFeature
                 photo={vehicleImage}
                 team="Simulations"
                 type="Project Team"
-                info="Testing shit out"
+                info="Computer simulations involving: "
             />
         </section>
     )

@@ -1,0 +1,18 @@
+.sideNavigation {
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 19px;
+}
+
+.sideNavigation h5 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.sideNavigation h6 {
+    margin: 13px 0;
+}
+
+.sideNavigation h6:hover {
+    color: var(--highlight);
+}

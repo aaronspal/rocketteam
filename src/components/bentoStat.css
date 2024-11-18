@@ -1,9 +1,9 @@
 .bentoStat {
-    border: var(--border);
-    background-color: var(--tileBackground);
-    backdrop-filter: var(--tileBlur);
-    border-radius: var(--borderRadius);
-    padding: 10px;
+    /*border: var(--border);*/
+    /*background-color: var(--tileBackground);*/
+    /*backdrop-filter: var(--tileBlur);*/
+    /*border-radius: var(--borderRadius);*/
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,18 +13,11 @@
     flex-grow: 1;
     text-transform: uppercase;
     flex-basis: 100%;
+    height: 100%;
 }
 
 .bentoStat h2 {
     color: #68ada2;
-    margin: 0;
-}
-
-@media screen and (max-width: 1000px) {
-    .bentoStat {
-        min-width: 100px;
-    }
-    .bentoStat h2 {
-        font-size: 40px;
-    }
+    font-size: 120px;
+    line-height: 120px;
 }
