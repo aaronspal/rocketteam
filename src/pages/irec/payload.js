@@ -16,8 +16,7 @@ function Payload() {
                 </section>
             </section>
             <section className="contentContainer">
-
-                <div className="flexContainer">
+                <div className="flexContainer g30">
                     <SideNavigation/>
                     <div className="textContainer">
                         <h6>Overview</h6>

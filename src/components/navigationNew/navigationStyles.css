@@ -133,6 +133,11 @@
     /*cursor: pointer;*/
 }
 
+.mobile-nav hr {
+    margin: 0;
+    border: 1px solid rgba(200, 200, 200, 0.1);
+}
+
 .mobile-nav .subcategorySection {
     font-size: 25px;
     margin-bottom: 30px;
@@ -166,6 +171,7 @@
     border: rgba(100,100,100,100%) solid 2px;
     opacity: 20%;
     margin-right: 35px;
+    border-radius: var(--borderRadius);
 }
 
 /* Responsive Breakpoints */

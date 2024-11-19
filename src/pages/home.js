@@ -9,6 +9,7 @@ import ESRALogo from "../media/home/ESRALogo.png"
 import React, { useEffect, useRef } from 'react';
 import UCSCLogo from "../media/UC_Santa_Cruz_logo.svg";
 import BaskinLogo from "../media/UCSC_BaskinEng_Logo_Color_RGB.svg";
+import {Link} from "react-router-dom";
 
 
 function Home() {
@@ -122,7 +123,7 @@ function Home() {
                                 Even without an aerospace department, the UCSC Rocket Team pushes on. From competing in the most prestigious rocketry competitions
                                 to researching groundbreaking thrust-vectoring designs, our team is the embodiment of success in the midst of challenges.
                             </p>
-                            <Button label="Explore Projects" link="https://example.com/donate"/>
+                            <Link to="/projects"><Button label="Explore Projects"/></Link>
                         </div>
                     </div>
                 </div>
@@ -131,10 +132,10 @@ function Home() {
                 <div className="headlineContainer">
                     <h3>Upcoming Events</h3>
                     <div className="eventsContainer g10">
-                        <EventTile day="19" month="November" eventName="General Meeting" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
-                        <EventTile day="20" month="November" eventName="Giving Day" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
-                        <EventTile day="3" month="December" eventName="General Meeting" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
-                        <EventTile day="14" month="December" eventName="L1 Launch" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
+                        <EventTile day="20" month="November" eventName="Giving Day" eventLocation="Online" eventTime="ALL DAY"/>
+                        <EventTile day="22" month="November" eventName="General Meeting" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
+                        <EventTile day="5" month="December" eventName="General Meeting" eventLocation="Baskin Engineering E2 180" eventTime="5PM - 6PM"/>
+                        <EventTile day="14" month="December" eventName="L1 Launch" eventLocation="Tripoli Centeral California" eventTime="ALL DAY"/>
                     </div>
                     <span className="infoNote">For individual subteam meetings, please refer to the events calendar!</span>
                 </div>
@@ -149,7 +150,7 @@ function Home() {
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                                 enim ad minim veniam.
                             </p>
-                            <Button label="Explore Outreach" link="https://example.com/donate"/>
+                            <Link to="/outreach"><Button label="Learn More"/></Link>
                         </div>
                     </div>
                 </div>

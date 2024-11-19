@@ -50,17 +50,16 @@ const MobileNavigation = ({ subcategories }) => {
             <div className="mobileContent">
                 {!activeSection ? (
                     <div className="mobileLinks">
-                        {/*<hr/>*/}
                         <Link to="/projects" onClick={(e) => handleSectionClick("Projects", e)}>Projects</Link>
-                        {/*<hr/>*/}
+                        <hr/>
                         <Link to="/outreach" onClick={(e) => handleSectionClick("Outreach", e)}>Outreach</Link>
-                        {/*<hr/>*/}
+                        <hr/>
                         <Link to="/leadership/current-leadership" onClick={(e) => handleSectionClick("Leadership", e)}>Leadership</Link>
-                        {/*<hr/>*/}
+                        <hr/>
                         <Link to="/new-members/new-members" onClick={(e) => handleSectionClick("New Members", e)}>New Members</Link>
-                        {/*<hr/>*/}
-                        <Link to="/new-members/new-members" onClick={(e) => handleSectionClick("New Members", e)}>DONATE</Link>
-
+                        <hr/>
+                        <a target="_blank" href="https://www.givecampus.com/schools/UniversityofCaliforniaSantaCruz/giving-day-2024/pages/ucscrocketry">DONATE</a>
+                        <hr/>
                     </div>
 
                 ) : (
@@ -74,17 +73,18 @@ const MobileNavigation = ({ subcategories }) => {
                                             <a href={link.url} target="_blank" rel="noopener noreferrer">
                                                 {link.name}
                                             </a>
+
                                         ) : (
                                             <Link to={link.path}>
                                                 {link.name}
                                             </Link>
                                         )}
                                     </div>
-                                ))}
+                                    ))}
                             </div>
                         ))}
                         <button className="backButton" onClick={handleBack}>
-                            Back
+                            Go Back
                         </button>
                     </div>
                 )}

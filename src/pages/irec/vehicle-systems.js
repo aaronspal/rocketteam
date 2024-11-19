@@ -1,7 +1,6 @@
 import '../projects.css';
 import '../../libraries/bentogrids.css';
 import splashImage from "../../media/vehicle-systems/loading.jpg"
-// import vehicleImage1 from "../../media/vehicle-systems/loading.jpg"
 import vehicleImage2 from "../../media/vehicle-systems/rocketlaunchfeb.jpg";
 import wireframe from "../../media/vehicle-systems/LeWireframe.png"
 import Skill from "../../components/skill"
@@ -21,7 +20,7 @@ function VehicleSystems() {
             <section className="contentContainer">
                 <figure><img src={wireframe} className="wireframe"/></figure>
                 <figcaption>Celsius 01 Fullscale Design, 2023</figcaption>
-                <div className="flexContainer">
+                <div className="flexContainer g30">
                     <SideNavigation/>
                     <div className="textContainer">
                         <h6>Overview</h6>
