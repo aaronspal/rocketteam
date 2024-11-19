@@ -2,8 +2,6 @@
 
 /*DIN 2014 and Moon typefaces*/
 
-@import url("https://use.typekit.net/gfb7rkg.css");
-
 :root {
   /*--baseColor: #0c0f14;*/
   --baseColor: #1e1e1e;
@@ -50,7 +48,7 @@ body {
   margin: 0;
   color: var(--text);
   background-color: var(--baseColor);
-  font-family: "DIN 2014", sans-serif;
+  font-family: din-2014, Barlow, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 107%;
@@ -107,7 +105,6 @@ body {
 
 .flexContainer {
   display: flex;
-  /*gap: 30px;*/
 }
 
 .bentoContainer {
@@ -219,9 +216,38 @@ hr {
 
 @media screen and (max-width: 900px) {
     .bentoStatContainer {
-      flex-direction: column;
+        flex-direction: column;
     }
     .flexContainer {
-      flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .headlineContainer {
+        width: 100%;
+        padding: 50px 50px;
+    }
+    .heroTextContainer {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-family: "Moon", sans-serif;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .headlineContainer {
+      padding: 50px 20px;
     }
 }

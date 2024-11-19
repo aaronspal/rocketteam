@@ -20,25 +20,19 @@ function GroundControlSystems() {
                 <div className="flexContainer">
                     <SideNavigation/>
                     <div className="textContainer">
-                        <h6>Project Blaze</h6>
+                        <h6>Overview</h6>
                         <p>
-                            Project Blaze is advancing high-powered rocketry avionics to serve researchers, students,
-                            professionals, and enthusiasts with an open-source approach to development. Blaze delivers a
-                            comprehensive guidance, control, and data acquisition system, providing dependable control
-                            and
-                            high-fidelity data collection for rockets reaching up to 10 kilometers and experiencing
-                            accelerations as high as 200 g's before data clipping, with built-in expandability to exceed
-                            design
-                            limits.
-                        </p>
-                        <p>
-                            As a first-of-its-kind general-purpose avionics platform, Blaze was created with modularity
-                            and
-                            mission adaptability in mind, ensuring it meets the demands of varied rocketry applications.
-                            Whether
-                            for academic exploration, rigorous field testing, or personal projects, Blaze is equipped to
-                            handle
-                            diverse mission profiles, making advanced rocketry avionics more accessible than ever.
+                            The Ground Control System (GCS) team at UCSC Rocketry plays a pivotal role in ensuring the
+                            success of our rocket missions by developing and maintaining cutting-edge software solutions.
+                            Our work encompasses data visualization, creating intuitive and interactive displays that help
+                            monitor the rocket’s performance in real time. We excel in data logging and analysis, capturing
+                            and interpreting critical telemetry to inform decision-making during launches. The team also
+                            implements real-time alerts to notify operators of anomalies, ensuring rapid responses to
+                            potential issues. Through centralized control, we streamline mission operations, while
+                            calibration tools ensure all sensors and systems function with precision. In addition, we
+                            bring creativity and usability to the forefront with Figma design for UI/UX, integrate mapping
+                            systems for enhanced situational awareness, and employ web development to build robust platforms
+                            that tie all these elements together.
                         </p>
                     </div>
                 </div>

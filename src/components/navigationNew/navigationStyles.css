@@ -1,0 +1,281 @@
+/* Desktop Navigation Styles */
+.desktop-nav {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: transparent;
+}
+
+.desktop-nav.expanded, .desktop-nav.scrolled, .mobile-nav.scrolled {
+    background: rgba(30, 30, 30, 0.7);
+    backdrop-filter: blur(40px);
+    border-bottom: var(--borderNav);
+}
+
+.desktop-nav .navContainer {
+    width: var(--headlineWidth);
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.desktop-nav .links {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: red;*/
+}
+
+.desktop-nav .subcategoryContainer {
+    display: flex;
+    width: 1150px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.desktop-nav .subcategorySection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.desktop-nav .RTLogoNav {
+    height: 40px;
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+    padding: 0 50px;
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 100px;
+    transition: height 0.3s ease;
+}
+
+.mobile-nav.expanded {
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.7);
+    backdrop-filter: blur(40px);
+}
+
+.mobile-nav .navContainer {
+    /*padding: 0 20px;*/
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav .RTLogoNav {
+    height: 40px;
+}
+
+.mobile-nav .menuButton {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.mobile-nav .menuIconNav {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.mobile-nav .menuButton.active .menuIconNav {
+    transform: rotate(45deg);
+}
+
+.mobile-nav .mobileContent {
+    display: none;
+    /*padding: 20px;*/
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-nav.expanded .mobileContent {
+    display: block;
+    opacity: 1;
+}
+
+.mobile-nav .mobileLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav .mobileLinks a {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mobile-nav .mobileSubcategories {
+    padding-top: 20px;
+}
+
+.mobile-nav .backButton {
+    /*border: none;*/
+    /*background: none;*/
+    /*color: white;*/
+    /*font-size: 16px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*margin-bottom: 20px;*/
+    /*cursor: pointer;*/
+}
+
+.mobile-nav .subcategorySection {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.mobile-nav .subcategorySection h5 {
+    margin-bottom: 15px;
+}
+
+.mobile-nav .subcategoryLink {
+    margin-bottom: 10px;
+}
+
+.subcategorySection a {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.RTLogoNavMobile {
+    display: none;
+    height: 60px;
+}
+
+
+.navIcon {
+    width: 140px;
+    height: 140px;
+    padding: 25px;
+    border: rgba(100,100,100,100%) solid 2px;
+    opacity: 20%;
+    margin-right: 35px;
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1210px) {
+    .desktop-nav .navContainer {
+        width: 100%;
+        padding: 0 50px;
+    }
+    .desktop-nav .subcategoryContainer {
+        padding: 20px 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .givingDayButton {
+        display: none;
+    }
+    .RTLogoNavMobile {
+        display: block;
+    }
+
+}
+    @media screen and (max-width: 400px) {
+        .mobile-nav {
+            padding: 0 20px;
+        }
+    }
+
+        /* CSS */
+.givingDayButton {
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 100px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.givingDayButton:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+                /*#ff0000,*/
+                /*#ff7300,*/
+                /*#fffb00,*/
+                /*#48ff00,*/
+                /*#00ffd5,*/
+                /*#002bff,*/
+                /*#7a00ff,*/
+                /*#ff00c8,*/
+                /*#ff0000*/
+
+            #ff00c8,
+            #8e27ff,
+            #006fff,
+            #00ffd5,
+            #006fff,
+            #8e27ff,
+            #ff00c8
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 40s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 100px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.givingDayButton:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+

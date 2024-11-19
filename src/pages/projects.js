@@ -4,8 +4,11 @@ import background from "../media/bluebackground.png";
 import vehicleImage from "../media/vehicle-systems/loading.jpg";
 import payloadImage from "../media/payload/payload.jpg";
 import avionicsImage from "../media/avionics/avionics.png";
-import splashImage from "../media/vehicle-systems/loading.jpg";
+import groundControlSystems from "../media/ground-control-systems/gcs.jpg";
+import simulationsImage from "../media/simulations/rocketsim.jpg";
 import React, {useEffect, useRef} from "react";
+import {Link} from "react-router-dom";
+import RTLogo from "../media/RocketTeamLogoWhite.png";
 
 function Projects() {
 
@@ -34,18 +37,17 @@ function Projects() {
                 <span className="infoNote">Learn more about the International Rocketry Engineering Competition</span>
 
             </section>
-            <ProjectFeature
-                photo={vehicleImage}
-                team="Vehicle Systems"
-                type="IREC Competition Team"
-                info="The heart of our project. The vehicle team designs and constructs the airframe of the rocket."
-            />
-            <ProjectFeature
-                photo={payloadImage}
-                team="Payload"
-                type="IREC Competition Team"
-                info="The soul of any rocket. The payload team designs what exactly will be going up with the Rocket. From drones to variable roll-control, this team does it all"
-            />
+            <Link to="/irec/vehicle-systems">
+                <ProjectFeature photo={vehicleImage} team="Vehicle Systems" type="IREC Competition Team"
+                    info="The heart of our project. The vehicle team designs and constructs the airframe of the rocket."
+                />
+            </Link>
+            <Link to="/irec/payload">
+                <ProjectFeature
+                    photo={payloadImage} team="Payload" type="IREC Competition Team"
+                    info="The soul of any rocket. The payload team designs what exactly will be going up with the Rocket. From drones to variable roll-control, this team does it all"
+                />
+            </Link>
             <section className="contentContainer">
                 <h3>Project Teams</h3>
                 <p>
@@ -60,30 +62,30 @@ function Projects() {
                     formerly known as Spaceport America.
                 </p>
             </section>
-            <ProjectFeature
-                photo={avionicsImage}
-                team="Avionics"
-                type="Project Team"
-                info="Percision control in high-powered rockets. Designed to gather and transmit data with dead-reckoning accuracy."
-            />
-            <ProjectFeature
-                photo={vehicleImage}
-                team="Ground Control Systems"
-                type="Project Team"
-                info="Creating a state-of-the-art application that can recieve and interpret real-time data."
-            />
-            <ProjectFeature
-                photo={vehicleImage}
-                team="Thrust Vector Control"
-                type="Project Team"
-                info="Designing a rocket that can land exactly like SpaceX."
-            />
-            <ProjectFeature
-                photo={vehicleImage}
-                team="Simulations"
-                type="Project Team"
-                info="Computer simulations involving: "
-            />
+            <Link to="/technical-projects/avionics">
+                <ProjectFeature
+                    photo={avionicsImage} team="Avionics" type="Project Team"
+                    info="Percision control in high-powered rockets. Designed to gather and transmit data with dead-reckoning accuracy."
+                />
+            </Link>
+            <Link to="/technical-projects/ground-control-systems">
+                <ProjectFeature
+                    photo={groundControlSystems} team="Ground Control Systems" type="Project Team"
+                    info="Developing state-of-the-art visualization tool that can interpret real-time data."
+                />
+            </Link>
+            <Link to="/technical-projects/thrust-vector-control">
+                <ProjectFeature
+                    photo={vehicleImage} team="Thrust Vector Control" type="Project Team"
+                    info="Reduce, Reuse, Recycle, Rockets."
+                />
+            </Link>
+            <Link to="/technical-projects/simulations">
+                <ProjectFeature
+                    photo={simulationsImage} team="Simulations" type="Project Team"
+                    info="Computer simulations involving: "
+                />
+            </Link>
         </section>
     )
 }

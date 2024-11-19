@@ -20,3 +20,9 @@
 .sideNavigation hr {
     margin: 0;
 }
+
+@media screen and (max-width: 900px) {
+    .sideNavigation {
+        display: none;
+    }
+}

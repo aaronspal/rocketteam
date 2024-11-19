@@ -1,9 +1,8 @@
 import '../projects.css';
-import splashImage from "../../media/avionics/avionics.png"
+import splashImage from "../../media/simulations/rocketsim.jpg"
 import BlazeImage from "../../media/avionics/blaze.png"
 import SideNavigation from "../../components/sideNavigation";
 import Skill from "../../components/skill";
-import vehicleImage2 from "../../media/vehicle-systems/rocketlaunchfeb.jpg";
 
 function Simulations() {
     return (

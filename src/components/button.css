@@ -4,14 +4,13 @@ button {
     font-size: inherit;
     font-family: 'DIN 2014';
     /*border-radius: 100px;*/
-    /*border-radius: var(--borderRadius);*/
-    padding: 20px 30px;
+    border-radius: var(--borderRadius);
+    padding: 15px 20px;
     text-transform: uppercase;
     cursor: pointer;
-    border: solid 2px #fff;
+    background-color: rgba(0,0,0,0);
     color: white;
     border: solid 2px #fff;
-    color: black;
 }
 
 button a {
@@ -22,7 +21,7 @@ button:hover {
     /*background-color: rgba(0,0,0,0);*/
     /*border: solid 2px #fff;*/
     /*border-color: var(--highlight);*/
-    color: white;
-    background-color: rgba(0,0,0,0);
+    color: black;
+    background-color: white;
     transition: 0.2s;
 }

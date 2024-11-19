@@ -4,11 +4,6 @@
     padding-right: 15px;
 }
 
-.leadTile h3 {
-    font-size: 30px;
-    margin-bottom: 0;
-}
-
 .bigPhotoFalse {
     width: 130px;
     height: 130px;
@@ -29,11 +24,38 @@
     border-radius: var(--borderRadius);
 }
 
-
-.bigTrue {
-}
-
 .bigFalse {
     display: flex;
     flex-basis: 50%;
+}
+
+.leadTile {
+    border: var(--border);
+    margin-bottom: 30px;
+    padding-right: 15px;
+    display: flex; /* Ensure Flexbox is applied */
+    align-items: center; /* Vertically center the image and textContainer */
+}
+
+.leadTile .textContainer {
+    flex-grow: 1;
+    display: flex; /* Flexbox for internal layout (if needed) */
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: center; /* Vertically center the text within the textContainer itself */
+}
+
+.leadTile h4 {
+    font-size: 22px;
+    color: white;
+}
+
+.leadTile h5 {
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+.leadTile span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--subhead);
 }

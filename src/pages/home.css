@@ -40,24 +40,22 @@
 }
 
 .weare .row {
-    justify-content: space-between;
+    margin-top: 60px;
 }
 
 .ESRALogo {
     height: 35px;
 }
 
-/* Define the initial state for the heroTextContainer elements */
 .heroTextContainer {
     opacity: 0;
-    transform: translateY(20px); /* Initially, move it down */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for both opacity and transform */
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Class to apply when the element becomes visible */
 .heroTextContainer.visible {
     opacity: 1;
-    transform: translateY(0); /* Move it to its original position */
+    transform: translateY(0);
 }
 
 
@@ -71,5 +69,11 @@
 @media screen and (max-width: 900px) {
     .RocketVideo {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .weare .row {
+        flex-direction: column;
     }
 }
