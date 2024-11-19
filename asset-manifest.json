@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/rocketteam/static/css/main.15bc080d.css",
-    "main.js": "/rocketteam/static/js/main.7d013c53.js",
+    "main.css": "/rocketteam/static/css/main.aa7214fe.css",
+    "main.js": "/rocketteam/static/js/main.05c59925.js",
     "static/js/453.58f6a3fc.chunk.js": "/rocketteam/static/js/453.58f6a3fc.chunk.js",
     "static/media/IMG_0713.png": "/rocketteam/static/media/IMG_0713.9f870a609a2cb044d41f.png",
     "static/media/RocketTeamInfoBoard.png": "/rocketteam/static/media/RocketTeamInfoBoard.2e6a096f949cce6a0009.png",
     "static/media/splashvideo.mp4": "/rocketteam/static/media/splashvideo.f90085090f705a74158d.mp4",
     "static/media/FARLaunch2.mp4": "/rocketteam/static/media/FARLaunch2.a76fb6829ded60d41cfa.mp4",
     "static/media/rocketlaunchfeb.jpg": "/rocketteam/static/media/rocketlaunchfeb.1b3c99c33c6a362f2e88.jpg",
+    "static/media/IMG_2201.JPG": "/rocketteam/static/media/IMG_2201.2db9d95814b687fb99e5.JPG",
     "static/media/LeWireframe.png": "/rocketteam/static/media/LeWireframe.7495d4f90d9eeb37d46c.png",
     "static/media/IMG_5724.jpg": "/rocketteam/static/media/IMG_5724.61dbd5ac0bf249805797.jpg",
     "static/media/Screenshot 2024-11-18 at 11.35.06 PM.png": "/rocketteam/static/media/Screenshot 2024-11-18 at 11.35.06 PM.65a38a84320042e80004.png",
@@ -32,12 +33,12 @@
     "static/media/UC_Santa_Cruz_logo.svg": "/rocketteam/static/media/UC_Santa_Cruz_logo.c445294ae0a1b6c2ab96b5956336c22d.svg",
     "index.html": "/rocketteam/index.html",
     "static/media/menuicon.svg": "/rocketteam/static/media/menuicon.444d0e11927b4093fcb9984b421bfade.svg",
-    "main.15bc080d.css.map": "/rocketteam/static/css/main.15bc080d.css.map",
-    "main.7d013c53.js.map": "/rocketteam/static/js/main.7d013c53.js.map",
+    "main.aa7214fe.css.map": "/rocketteam/static/css/main.aa7214fe.css.map",
+    "main.05c59925.js.map": "/rocketteam/static/js/main.05c59925.js.map",
     "453.58f6a3fc.chunk.js.map": "/rocketteam/static/js/453.58f6a3fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15bc080d.css",
-    "static/js/main.7d013c53.js"
+    "static/css/main.aa7214fe.css",
+    "static/js/main.05c59925.js"
   ]
 }
