@@ -16,7 +16,7 @@ function Simulations() {
                 </section>
             </section>
             <section className="contentContainer">
-                <div className="flexContainer">
+                <div className="flexContainer g30">
                     <SideNavigation/>
                     <div className="textContainer">
                         <h6>Project Blaze</h6>

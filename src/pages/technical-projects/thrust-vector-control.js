@@ -1,9 +1,7 @@
 import '../projects.css';
-import splashImage from "../../media/avionics/avionics.png"
-import BlazeImage from "../../media/avionics/blaze.png"
+import splashImage from "../../media/thrust-vector-control/IMG_1667.png"
 import SideNavigation from "../../components/sideNavigation";
 import Skill from "../../components/skill";
-import vehicleImage2 from "../../media/vehicle-systems/rocketlaunchfeb.jpg";
 
 function ThrustVectorControl() {
     return (
@@ -17,7 +15,7 @@ function ThrustVectorControl() {
                 </section>
             </section>
             <section className="contentContainer">
-                <div className="flexContainer">
+                <div className="flexContainer g30">
                     <SideNavigation/>
                     <div className="textContainer">
                         <h6>Overview</h6>
@@ -58,10 +56,12 @@ function ThrustVectorControl() {
                     <h3>Skills used</h3>
                     <section className="row g10">
                         <Skill name="Computer Aid Design"/>
-                        <Skill name="OpenRocket"/>
-                        <Skill name="Control Fluid Dynamics"/>
-                        <Skill name="Composites"/>
-                        <Skill name="3D Printing"/>
+                        <Skill name="Machine Learning"/>
+                        <Skill name="PID Control"/>
+                        <Skill name="Photogrammetery"/>
+                        <Skill name="OpenCV"/>
+                        <Skill name="Pytorch"/>
+                        <Skill name="Coppeliasim"/>
                     </section>
                 </section>
             </section>

@@ -5,6 +5,8 @@ import BentoStat from "../components/bentoStat";
 import SplashVideo from "../media/videos/splashvideo.mp4";
 import RocketLaunchVideoFAR from "../media/videos/FARLaunch2.mp4"
 import ESRALogo from "../media/home/ESRALogo.png"
+// import WelcomePopup from '../components/overlay';  // adjust the path based on your file structure
+
 
 import React, { useEffect, useRef } from 'react';
 import UCSCLogo from "../media/UC_Santa_Cruz_logo.svg";
@@ -52,6 +54,7 @@ function Home() {
 
     return (
         <section>
+            {/*<WelcomePopup/>*/}
             <section className="landing hero">
                 <video className="backgroundVideo" autoPlay loop muted playsInline>
                     <source src={SplashVideo} type="video/mp4"/>
@@ -88,7 +91,8 @@ function Home() {
                                 Robotics Engineering, Electrical Engineering, Astrophysics, as well as
                                 Business Administration and the Arts.
 
-                                We also
+                                We also pride ourselves in being open to any major, year, or background. Rocket Team
+                                is open to any student enrolled at UC Santa Cruz.
                             </p>
                             <p>
                                 This year, the UCSC Rocket team will be competing in the International Rocketry
@@ -146,9 +150,8 @@ function Home() {
                         <div ref={el => containerRef.current[1] = el} className="heroTextContainer">
                             <h2>EMPOWERING OUR LOCAL COMMUNITY</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam.
+                                Not only do we love rocketry, but we share our love with the wider community. From visits
+                                to grade schools, to partnerships with local companies, we're deeply embedded within our community.
                             </p>
                             <Link to="/outreach"><Button label="Learn More"/></Link>
                         </div>

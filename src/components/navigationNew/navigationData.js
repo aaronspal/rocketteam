@@ -14,7 +14,7 @@ export const subcategories = {
     "Outreach": [
         { header: "Outreach", links: [
                 { name: "Outreach", path: "/outreach/outreach" },
-                { name: "Media", path: "/outreach/cinematics" },
+                { name: "Media", path: "/outreach/media" },
             ] },
         { header: "Sponsors", links: [
                 { name: "Our Sponsors", path: "/outreach/outreach" },

@@ -59,3 +59,20 @@
     font-weight: bold;
     color: var(--subhead);
 }
+
+@media screen and (max-width: 900px) {
+    .bigPhotoFalse {
+        width: 100%;
+        height: 250px;
+    }
+    .bigPhotoTrue {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bigFalse {
+        flex-basis: 100%;
+    }
+}

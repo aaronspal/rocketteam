@@ -42,7 +42,7 @@
 .desktop-nav .subcategorySection {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 .desktop-nav .RTLogoNav {
@@ -163,7 +163,6 @@
     height: 60px;
 }
 
-
 .navIcon {
     width: 140px;
     height: 140px;
@@ -181,7 +180,8 @@
         padding: 0 50px;
     }
     .desktop-nav .subcategoryContainer {
-        padding: 20px 0 40px 0;
+        width: 100%;
+        padding: 20px 50px 40px 50px;
     }
 }
 

@@ -17,7 +17,7 @@ function GroundControlSystems() {
                 </section>
             </section>
             <section className="contentContainer">
-                <div className="flexContainer">
+                <div className="flexContainer g30">
                     <SideNavigation/>
                     <div className="textContainer">
                         <h6>Overview</h6>
@@ -39,21 +39,13 @@ function GroundControlSystems() {
                 <section className="skills">
                     <h3>Skills used</h3>
                     <section className="row g10">
-                        <Skill name="Computer Aid Design"/>
-                        <Skill name="OpenRocket"/>
-                        <Skill name="Control Fluid Dynamics"/>
-                        <Skill name="Composites"/>
-                        <Skill name="3D Printing"/>
+                        <Skill name="Figma"/>
+                        <Skill name="React"/>
+                        <Skill name="Data Logging"/>
+                        <Skill name="Data Analysis"/>
+                        <Skill name="Data Visualization"/>
                     </section>
                 </section>
-                {/*<div className="bentoContainer">*/}
-                {/*    <div className="column">*/}
-                {/*        <img src={splashImage} className="bentoImage"/>*/}
-                {/*    </div>*/}
-                {/*    <div className="column">*/}
-                {/*        <img src={vehicleImage2} className="bentoImage"/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <img src={BlazeImage} className="IMG100"/>
             </section>
         </section>

@@ -12,6 +12,9 @@ import Amber from "../../media/leads/IMG_8848.jpg"
 import Laura from "../../media/leads/IMG_1754.jpg"
 import Marcus from "../../media/leads/IMG_5571.jpg"
 import Arjun from "../../media/leads/IMG_5724.jpg"
+import Julian from "../../media/leads/img_9983.jpg"
+import Merrick from "../../media/leads/IMG_7105.jpg"
+import Alex from "../../media/leads/FullSizeRender Kopie.png"
 import Teo from "../../media/leads/IMG_2201.JPG"
 
 function CurrentLeadership() {
@@ -34,7 +37,7 @@ function CurrentLeadership() {
                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                  mollit anim id est laborum."
                 />
-                <LeadsCard big={true} name="Khan Tran" title="Vice President" year="4th" major="Robotics" image={Khanh}
+                <LeadsCard big={true} name="Khanh Tran" title="Vice President" year="4th" major="Robotics" image={Khanh}
                            about="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -49,7 +52,7 @@ function CurrentLeadership() {
                     <LeadsCard big={false} name="Aaron Spalding" title="Business and Finance" year="3rd"
                                major="Art and Design: Games and Playable Media" image={Aaron}/>
                     <LeadsCard big={false} name="Alexander Dalchev" title="Launch Operations" year="2nd"
-                               major="Business" image={Aaron}/>
+                               major="Business" image={Alex}/>
                     <LeadsCard big={false} name="Heli Kadakia" title="Outreach" year="2nd"
                                major="Computer Science and Computer Engineering" image={Heli}/>
                 </div>
@@ -67,9 +70,9 @@ function CurrentLeadership() {
                 <h5 className="H5Gray">Project Leads</h5>
                 <div className="leadsContainer">
                 <LeadsCard big={false} name="Julian Barberra" title="Avionics Electrical" year="4th"
-                               major="Computer Engineering" image={Aaron}/>
+                               major="Computer Engineering" image={Julian}/>
                     <LeadsCard big={false} name="Merrick Fort" title="Avionics Software" year="4th"
-                               major="Art and Design: Games and Playable Media" image={Aaron}/>
+                               major="Art and Design: Games and Playable Media" image={Merrick}/>
                     <LeadsCard big={false} name="Sage Silberman" title="Ground Control Systems" year="4th"
                                major="Art and Design: Games and Playable Media" image={Aaron}/>
                     <LeadsCard big={false} name="Amber Borjigin" title="Thrust Vector Control" year="4th"

@@ -84,4 +84,7 @@ footer a {
         flex-direction: column;
         text-align: center;
     }
+    .footerLogos {
+        display: none;
+    }
 }

@@ -1,21 +1,19 @@
 import './projects.css';
-import splashImage from "./../media/avionics/avionics.png"
 import ProjectFeature from "../components/projectfeature";
-import avionicsImage from "../media/avionics/avionics.png";
 import SideNavigation from "../components/sideNavigation";
 import Skill from "../components/skill";
-import BlazeImage from "../media/avionics/blaze.png";
+import outreachImage from "../media/outreach/IMG_0379.jpg";
 
 function Avionics() {
     return (
         <section>
             <ProjectFeature
-                photo={avionicsImage}
+                photo={outreachImage}
                 team="Outreach"
                 type="Administrative Team"
             />
             <section className="contentContainer">
-                <div className="flexContainer">
+                <div className="flexContainer g30">
                     <SideNavigation/>
                     <div className="textContainer">
                         <h6>Overview</h6>
@@ -36,11 +34,11 @@ function Avionics() {
                 <section className="skills">
                     <h3>Skills used</h3>
                     <section className="row g10">
-                        <Skill name="Computer Aid Design"/>
-                        <Skill name="OpenRocket"/>
-                        <Skill name="Control Fluid Dynamics"/>
-                        <Skill name="Composites"/>
-                        <Skill name="3D Printing"/>
+                        <Skill name="Videography"/>
+                        <Skill name="Photography"/>
+                        <Skill name="Event Coordinating"/>
+                        <Skill name="Graphic Design"/>
+                        <Skill name="Social Media"/>
                     </section>
                 </section>
             </section>

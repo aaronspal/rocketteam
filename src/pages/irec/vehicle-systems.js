@@ -32,13 +32,10 @@ function VehicleSystems() {
                             each stage of the design and building process.
                         </p>
                         <p>
-                            We are also responsible for designing and implementing the rocket’s
-                            recovery system to ensure a safe descent and recovery after flight.
-                            This includes preparing ejection charges for each separation event,
-                            determining optimal parachute sizing, and analyzing flight data. Utilizing
-                            OpenRocket flight software, we examine how factors such as altitude,
-                            wind conditions, descent rate, and stability impact the rocket performance
-                            during flight.
+                            Clear and consistent communication with other teams is essential to the smooth integration
+                            of subsystems within the final launch vehicle. We prioritize the safe housing and deployment
+                            of the Payload while accommodating space and functionality for student-developed avionics,
+                            ensuring a successful performance during the competition flight.
                         </p>
                         <h6>Recovery</h6>
                         <p>
@@ -54,7 +51,7 @@ function VehicleSystems() {
                     <section className="row g10">
                         <Skill name="Computer Aid Design"/>
                         <Skill name="OpenRocket"/>
-                        <Skill name="Control Fluid Dynamics"/>
+                        <Skill name="Computational Fluid Dynamics"/>
                         <Skill name="Composites"/>
                         <Skill name="3D Printing"/>
                         <Skill name="Flight Simulations"/>
