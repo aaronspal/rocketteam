@@ -9266,7 +9266,7 @@
         Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
         Object.defineProperty(e, "__esModule", { value: !0 });
     }),
-    (n.p = "/rocketteam/"),
+    (n.p = "/"),
     (() => {
       var e = { 792: 0 };
       n.f.j = (t, r) => {
